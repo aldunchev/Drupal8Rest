@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <h1>{{title}}</h1>
+    <ul class="blogs">
+        {% for blog in blogs %}
+            <li class="blogs__item">
+                <h2>{{blog.title}}</h2>
+                {{blog.body}}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
